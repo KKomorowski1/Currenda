@@ -1,0 +1,9 @@
+server:
+  port: 8081
+logging:
+  file:
+    name: test.log
+  level:
+    org:
+      zalando:
+        logbook: TRACE
