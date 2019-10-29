@@ -42,7 +42,7 @@ public class SpotifyServiceImpl implements SpotifyService{
 
     @Override
     public List<FormattedTracks> getTracksFromSpotify(String track) throws IOException {
-        String uri = "https://api.spotify.com/v1/search?query=track:fink&offset=0&limit=50&type=track&market=PL";
+        String uri = "https://api.spotify.com/v1/search?query=track:"+track+"&offset=0&limit=50&type=track&market=PL";
         ObjectMapper mapper = new ObjectMapper();
 
         Tracks tracks = mapper.readValue(sendRequestWithToken(uri), Tracks.class).getTracks();
