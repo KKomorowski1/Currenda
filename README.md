@@ -3,7 +3,6 @@
   - Java 11,
   - Spotify api, 
   - Spring boot,
-  - JPA,
   - MongoDB,
   - Angular,
   - Jackson,
