@@ -10,5 +10,5 @@ logging:
 spring:
   data:
     mongodb:
-      port: 1234
+      port: 27017
       host: localhost

@@ -25,7 +25,7 @@ public class MongoInMemory {
     @PostConstruct
     public void init() throws IOException {
         Storage storage = new Storage(
-                System.getProperty("user.home") + "/.ttraining-storage", null, 0);
+                System.getProperty("user.home") + "/.training-storage", null, 0);
 
         IRuntimeConfig runtimeConfig = new RuntimeConfigBuilder()
                 .defaults(Command.MongoD)
